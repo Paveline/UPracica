@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "567e670d-6caa-4290-94b9-1028a71c89d3",
+		"name": "Magic The Gathering",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.magicthegathering.io/v1/cards",
+					"protocol": "https",
+					"host": [
+						"api",
+						"magicthegathering",
+						"io"
+					],
+					"path": [
+						"v1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Color",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.magicthegathering.io/v1/cards?colors=blue",
+					"protocol": "https",
+					"host": [
+						"api",
+						"magicthegathering",
+						"io"
+					],
+					"path": [
+						"v1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "nissa",
+							"disabled": true
+						},
+						{
+							"key": "colors",
+							"value": "blue"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Color & Types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.magicthegathering.io/v1/cards?colors=blue",
+					"protocol": "https",
+					"host": [
+						"api",
+						"magicthegathering",
+						"io"
+					],
+					"path": [
+						"v1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "nissa",
+							"disabled": true
+						},
+						{
+							"key": "colors",
+							"value": "blue"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.magicthegathering.io/v1/sets",
+					"protocol": "https",
+					"host": [
+						"api",
+						"magicthegathering",
+						"io"
+					],
+					"path": [
+						"v1",
+						"sets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.magicthegathering.io/v1/sets",
+					"protocol": "https",
+					"host": [
+						"api",
+						"magicthegathering",
+						"io"
+					],
+					"path": [
+						"v1",
+						"sets"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,21 @@
+Сервис ITunes
+
+1 - При обычном поиске без параметров никакой информации нет
+
+2 - При поиске по имени артиса выдается список произведений
+term - The URL-encoded text string you want to search for. For example: jack+johnson.
+
+3 - Поиск по артисту и стране - в результате поиска выдается фильм "8 Миля" в главных ролях с Эминемом в русской озвучке
+country - The two-letter country code for the store you want to search. The search uses the default store front for the specified country. For example: US. The default is US.
+
+4 - Поиск по имени артиста и типу произведения(музыка, фильм и т.д.) - в результате получаем список фильмов с Эминемом
+media - The media type you want to search for. For example: movie. The default is all.
+
+5 - Тут используется лимит по показваемым запросам (в этом примере 1)
+limit - The number of search results you want the iTunes Store to return. For example: 25.The default is 50.
+
+6 - Поиск сразу по четырем параметрам
+
+-----------------------------------------------------------------------------------------------
+
+https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/
