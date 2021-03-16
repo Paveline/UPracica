@@ -15,6 +15,8 @@ public class GetNameServlet extends HttpServlet {
 
         if (name == null || name.length() == 0)
             name = "No name";
+        else if (name.length() > 100)
+            name = name.substring(0,100) + "\n\n Name can't be more than 100 characters";
 
         resp.getOutputStream().println("<html><h2>" + name + "</h2></html>");
     }
