@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#" class="header__wrapper_logo">PROFIT!</a>
+                <button class="header__wrapper_btn">LOG IN</button>
+            </div>
+        </div>
+    </header>
+    
+    <section class="main">
+        <div class="container">
+            <h1>PRODUCTS</h1>
+            <div class="main__filter">
+                <div class="main__filter_by">filter by</div>
+                <div class="main__filter_wrapper">
+                    <button class="main__filter_item">DATE</button>
+                    <div class="main__filter_line">|</div>
+                    <button class="main__filter_item">hashtags</button>
+                    <div class="main__filter_line">|</div>
+                    <!-- <button class="main__filter_item">Supplier name</button> -->
+                    <select class="main__filter_item">
+                    </select>
+                </div>
+                <button class="main__filter_reset">reset</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+       <div class="container">
+           <div class="products__wrapper">
+            <!-- <div class="products__item">
+                <div class="products__item_wrapper">
+                    <div class="products__item_leftBlock">
+                        <img class="products__item_icon" src="img/product_item.png" alt="">
+                        <div class="products__item_company">ADOBE</div>
+                        <img src="img/stars.png" alt="" class="products__item_rating">
+                        <div class="products__item_sale">12%</div>
+                        <div class="products__item_date">Until 12.12.2077</div>
+                        <button class="products__item_btnReview">Add ReView</button>
+                        <button class="products__item_btnEdit">EDIT</button>
+                        <button class="products__item_btnDelete">DELETE</button>
+                    </div>
+                    <div class="products__item_rightBlock">
+                        <div class="products__item_title">Adobe PHOTOSHOP</div>
+                        <div class="products__item_text">From photo editing and 
+                            compositing to digital painting, animation, and graphic 
+                            design — you can do it all in Photoshop.</div>
+                        <a class="products__item_link" href="https://www.adobe.com/uk/products/photoshop.html?mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB:G:s&s_kwcid=AL!3085!3!340669891887!e!!g!!adobe%20photoshop!1422700211!58647953511&gclid=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB">Read Full Version</a>
+                        <div class="products__reviews">
+                            <div class="products__reviews_title">Reviews</div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Wow!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Norm!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">SUPER!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item_footer">
+                    <div class="products__item_tags">
+                        <div class="tag_1">#Adobe</div>
+                        <div class="tag_2">#Art</div>
+                        <div class="tag_3">#Shrek</div>
+                        <div class="tag_4">#App</div>
+                        <div class="tag_5">#Program</div>
+                        <div class="tag_6">#SALE</div>
+                    </div>
+                    <div class="products__item_published">10.11.1991</div>
+                </div>
+            </div>
+            <div class="products__item purple__item">
+                <div class="products__item_wrapper">
+                    <div class="products__item_leftBlock">
+                        <img class="products__item_icon" src="img/product_item.png" alt="">
+                        <div class="products__item_company">ADOBE</div>
+                        <img src="img/stars.png" alt="" class="products__item_rating">
+                        <div class="products__item_sale">12%</div>
+                        <div class="products__item_date">Until 12.12.2077</div>
+                        <button class="products__item_btnReview">Add ReView</button>
+                        <button class="products__item_btnEdit">EDIT</button>
+                        <button class="products__item_btnDelete">DELETE</button>
+                    </div>
+                    <div class="products__item_rightBlock">
+                        <div class="products__item_title">Adobe PHOTOSHOP</div>
+                        <div class="products__item_text">From photo editing and 
+                            compositing to digital painting, animation, and graphic 
+                            design — you can do it all in Photoshop.</div>
+                        <a class="products__item_link" href="https://www.adobe.com/uk/products/photoshop.html?mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB:G:s&s_kwcid=AL!3085!3!340669891887!e!!g!!adobe%20photoshop!1422700211!58647953511&gclid=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB">Read Full Version</a>
+                        <div class="products__reviews">
+                            <div class="products__reviews_title">Reviews</div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Wow!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Norm!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">SUPER!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item_footer">
+                    <div class="products__item_tags">
+                        <div class="tag_1">#Adobe</div>
+                        <div class="tag_2">#Art</div>
+                        <div class="tag_3">#Shrek</div>
+                        <div class="tag_4">#App</div>
+                        <div class="tag_5">#Program</div>
+                        <div class="tag_6">#SALE</div>
+                    </div>
+                    <div class="products__item_published">10.11.1991</div>
+                </div>
+            </div>
+            <div class="products__item purple__item">
+                <div class="products__item_wrapper">
+                    <div class="products__item_leftBlock">
+                        <img class="products__item_icon" src="img/product_item.png" alt="">
+                        <div class="products__item_company">ADOBE</div>
+                        <img src="img/stars.png" alt="" class="products__item_rating">
+                        <div class="products__item_sale">12%</div>
+                        <div class="products__item_date">Until 12.12.2077</div>
+                        <button class="products__item_btnReview">Add ReView</button>
+                        <button class="products__item_btnEdit">EDIT</button>
+                        <button class="products__item_btnDelete">DELETE</button>
+                    </div>
+                    <div class="products__item_rightBlock">
+                        <div class="products__item_title">Adobe PHOTOSHOP</div>
+                        <div class="products__item_text">From photo editing and 
+                            compositing to digital painting, animation, and graphic 
+                            design — you can do it all in Photoshop.</div>
+                        <a class="products__item_link" href="https://www.adobe.com/uk/products/photoshop.html?mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB:G:s&s_kwcid=AL!3085!3!340669891887!e!!g!!adobe%20photoshop!1422700211!58647953511&gclid=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB">Read Full Version</a>
+                        <div class="products__reviews">
+                            <div class="products__reviews_title">Reviews</div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Wow!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Norm!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">SUPER!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item_footer">
+                    <div class="products__item_tags">
+                        <div class="tag_1">#Adobe</div>
+                        <div class="tag_2">#Art</div>
+                        <div class="tag_3">#Shrek</div>
+                        <div class="tag_4">#App</div>
+                        <div class="tag_5">#Program</div>
+                        <div class="tag_6">#SALE</div>
+                    </div>
+                    <div class="products__item_published">10.11.1991</div>
+                </div>
+            </div>
+            <div class="products__item">
+                <div class="products__item_wrapper">
+                    <div class="products__item_leftBlock">
+                        <img class="products__item_icon" src="img/product_item.png" alt="">
+                        <div class="products__item_company">ADOBE</div>
+                        <img src="img/stars.png" alt="" class="products__item_rating">
+                        <div class="products__item_sale">12%</div>
+                        <div class="products__item_date">Until 12.12.2077</div>
+                        <button class="products__item_btnReview">Add ReView</button>
+                        <button class="products__item_btnEdit">EDIT</button>
+                        <button class="products__item_btnDelete">DELETE</button>
+                    </div>
+                    <div class="products__item_rightBlock">
+                        <div class="products__item_title">Adobe PHOTOSHOP</div>
+                        <div class="products__item_text">From photo editing and 
+                            compositing to digital painting, animation, and graphic 
+                            design — you can do it all in Photoshop.</div>
+                        <a class="products__item_link" href="https://www.adobe.com/uk/products/photoshop.html?mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB:G:s&s_kwcid=AL!3085!3!340669891887!e!!g!!adobe%20photoshop!1422700211!58647953511&gclid=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB">Read Full Version</a>
+                        <div class="products__reviews">
+                            <div class="products__reviews_title">Reviews</div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Wow!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Norm!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">SUPER!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item_footer">
+                    <div class="products__item_tags">
+                        <div class="tag_1">#Adobe</div>
+                        <div class="tag_2">#Art</div>
+                        <div class="tag_3">#Shrek</div>
+                        <div class="tag_4">#App</div>
+                        <div class="tag_5">#Program</div>
+                        <div class="tag_6">#SALE</div>
+                    </div>
+                    <div class="products__item_published">10.11.1991</div>
+                </div>
+            </div>
+            <div class="products__item">
+                <div class="products__item_wrapper">
+                    <div class="products__item_leftBlock">
+                        <img class="products__item_icon" src="img/product_item.png" alt="">
+                        <div class="products__item_company">ADOBE</div>
+                        <img src="img/stars.png" alt="" class="products__item_rating">
+                        <div class="products__item_sale">12%</div>
+                        <div class="products__item_date">Until 12.12.2077</div>
+                        <button class="products__item_btnReview">Add ReView</button>
+                        <button class="products__item_btnEdit">EDIT</button>
+                        <button class="products__item_btnDelete">DELETE</button>
+                    </div>
+                    <div class="products__item_rightBlock">
+                        <div class="products__item_title">Adobe PHOTOSHOP</div>
+                        <div class="products__item_text">From photo editing and 
+                            compositing to digital painting, animation, and graphic 
+                            design — you can do it all in Photoshop.</div>
+                        <a class="products__item_link" href="https://www.adobe.com/uk/products/photoshop.html?mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB:G:s&s_kwcid=AL!3085!3!340669891887!e!!g!!adobe%20photoshop!1422700211!58647953511&gclid=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB">Read Full Version</a>
+                        <div class="products__reviews">
+                            <div class="products__reviews_title">Reviews</div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Wow!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Norm!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">SUPER!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item_footer">
+                    <div class="products__item_tags">
+                        <div class="tag_1">#Adobe</div>
+                        <div class="tag_2">#Art</div>
+                        <div class="tag_3">#Shrek</div>
+                        <div class="tag_4">#App</div>
+                        <div class="tag_5">#Program</div>
+                        <div class="tag_6">#SALE</div>
+                    </div>
+                    <div class="products__item_published">10.11.1991</div>
+                </div>
+            </div>
+            <div class="products__item purple__item">
+                <div class="products__item_wrapper">
+                    <div class="products__item_leftBlock">
+                        <img class="products__item_icon" src="img/product_item.png" alt="">
+                        <div class="products__item_company">ADOBE</div>
+                        <img src="img/stars.png" alt="" class="products__item_rating">
+                        <div class="products__item_sale">12%</div>
+                        <div class="products__item_date">Until 12.12.2077</div>
+                        <button class="products__item_btnReview">Add ReView</button>
+                        <button class="products__item_btnEdit">EDIT</button>
+                        <button class="products__item_btnDelete">DELETE</button>
+                    </div>
+                    <div class="products__item_rightBlock">
+                        <div class="products__item_title">Adobe PHOTOSHOP</div>
+                        <div class="products__item_text">From photo editing and 
+                            compositing to digital painting, animation, and graphic 
+                            design — you can do it all in Photoshop.</div>
+                        <a class="products__item_link" href="https://www.adobe.com/uk/products/photoshop.html?mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB:G:s&s_kwcid=AL!3085!3!340669891887!e!!g!!adobe%20photoshop!1422700211!58647953511&gclid=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB">Read Full Version</a>
+                        <div class="products__reviews">
+                            <div class="products__reviews_title">Reviews</div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Wow!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Norm!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">SUPER!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item_footer">
+                    <div class="products__item_tags">
+                        <div class="tag_1">#Adobe</div>
+                        <div class="tag_2">#Art</div>
+                        <div class="tag_3">#Shrek</div>
+                        <div class="tag_4">#App</div>
+                        <div class="tag_5">#Program</div>
+                        <div class="tag_6">#SALE</div>
+                    </div>
+                    <div class="products__item_published">10.11.1991</div>
+                </div>
+            </div>
+            <div class="products__item purple__item">
+                <div class="products__item_wrapper">
+                    <div class="products__item_leftBlock">
+                        <img class="products__item_icon" src="img/product_item.png" alt="">
+                        <div class="products__item_company">ADOBE</div>
+                        <img src="img/stars.png" alt="" class="products__item_rating">
+                        <div class="products__item_sale">12%</div>
+                        <div class="products__item_date">Until 12.12.2077</div>
+                        <button class="products__item_btnReview">Add ReView</button>
+                        <button class="products__item_btnEdit">EDIT</button>
+                        <button class="products__item_btnDelete">DELETE</button>
+                    </div>
+                    <div class="products__item_rightBlock">
+                        <div class="products__item_title">Adobe PHOTOSHOP</div>
+                        <div class="products__item_text">From photo editing and 
+                            compositing to digital painting, animation, and graphic 
+                            design — you can do it all in Photoshop.</div>
+                        <a class="products__item_link" href="https://www.adobe.com/uk/products/photoshop.html?mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB:G:s&s_kwcid=AL!3085!3!340669891887!e!!g!!adobe%20photoshop!1422700211!58647953511&gclid=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB">Read Full Version</a>
+                        <div class="products__reviews">
+                            <div class="products__reviews_title">Reviews</div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Wow!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Norm!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">SUPER!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item_footer">
+                    <div class="products__item_tags">
+                        <div class="tag_1">#Adobe</div>
+                        <div class="tag_2">#Art</div>
+                        <div class="tag_3">#Shrek</div>
+                        <div class="tag_4">#App</div>
+                        <div class="tag_5">#Program</div>
+                        <div class="tag_6">#SALE</div>
+                    </div>
+                    <div class="products__item_published">10.11.1991</div>
+                </div>
+            </div>
+            <div class="products__item">
+                <div class="products__item_wrapper">
+                    <div class="products__item_leftBlock">
+                        <img class="products__item_icon" src="img/product_item.png" alt="">
+                        <div class="products__item_company">ADOBE</div>
+                        <img src="img/stars.png" alt="" class="products__item_rating">
+                        <div class="products__item_sale">12%</div>
+                        <div class="products__item_date">Until 12.12.2077</div>
+                        <button class="products__item_btnReview">Add ReView</button>
+                        <button class="products__item_btnEdit">EDIT</button>
+                        <button class="products__item_btnDelete">DELETE</button>
+                    </div>
+                    <div class="products__item_rightBlock">
+                        <div class="products__item_title">Adobe PHOTOSHOP</div>
+                        <div class="products__item_text">From photo editing and 
+                            compositing to digital painting, animation, and graphic 
+                            design — you can do it all in Photoshop.</div>
+                        <a class="products__item_link" href="https://www.adobe.com/uk/products/photoshop.html?mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB:G:s&s_kwcid=AL!3085!3!340669891887!e!!g!!adobe%20photoshop!1422700211!58647953511&gclid=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB">Read Full Version</a>
+                        <div class="products__reviews">
+                            <div class="products__reviews_title">Reviews</div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Wow!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Norm!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">SUPER!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item_footer">
+                    <div class="products__item_tags">
+                        <div class="tag_1">#Adobe</div>
+                        <div class="tag_2">#Art</div>
+                        <div class="tag_3">#Shrek</div>
+                        <div class="tag_4">#App</div>
+                        <div class="tag_5">#Program</div>
+                        <div class="tag_6">#SALE</div>
+                    </div>
+                    <div class="products__item_published">10.11.1991</div>
+                </div>
+            </div>
+            <div class="products__item">
+                <div class="products__item_wrapper">
+                    <div class="products__item_leftBlock">
+                        <img class="products__item_icon" src="img/product_item.png" alt="">
+                        <div class="products__item_company">ADOBE</div>
+                        <img src="img/stars.png" alt="" class="products__item_rating">
+                        <div class="products__item_sale">12%</div>
+                        <div class="products__item_date">Until 12.12.2077</div>
+                        <button class="products__item_btnReview">Add ReView</button>
+                        <button class="products__item_btnEdit">EDIT</button>
+                        <button class="products__item_btnDelete">DELETE</button>
+                    </div>
+                    <div class="products__item_rightBlock">
+                        <div class="products__item_title">Adobe PHOTOSHOP</div>
+                        <div class="products__item_text">From photo editing and 
+                            compositing to digital painting, animation, and graphic 
+                            design — you can do it all in Photoshop.</div>
+                        <a class="products__item_link" href="https://www.adobe.com/uk/products/photoshop.html?mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB:G:s&s_kwcid=AL!3085!3!340669891887!e!!g!!adobe%20photoshop!1422700211!58647953511&gclid=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB">Read Full Version</a>
+                        <div class="products__reviews">
+                            <div class="products__reviews_title">Reviews</div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Wow!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Norm!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">SUPER!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item_footer">
+                    <div class="products__item_tags">
+                        <div class="tag_1">#Adobe</div>
+                        <div class="tag_2">#Art</div>
+                        <div class="tag_3">#Shrek</div>
+                        <div class="tag_4">#App</div>
+                        <div class="tag_5">#Program</div>
+                        <div class="tag_6">#SALE</div>
+                    </div>
+                    <div class="products__item_published">10.11.1991</div>
+                </div>
+            </div>
+            <div class="products__item purple__item">
+                <div class="products__item_wrapper">
+                    <div class="products__item_leftBlock">
+                        <img class="products__item_icon" src="img/product_item.png" alt="">
+                        <div class="products__item_company">ADOBE</div>
+                        <img src="img/stars.png" alt="" class="products__item_rating">
+                        <div class="products__item_sale">12%</div>
+                        <div class="products__item_date">Until 12.12.2077</div>
+                        <button class="products__item_btnReview">Add ReView</button>
+                        <button class="products__item_btnEdit">EDIT</button>
+                        <button class="products__item_btnDelete">DELETE</button>
+                    </div>
+                    <div class="products__item_rightBlock">
+                        <div class="products__item_title">Adobe PHOTOSHOP</div>
+                        <div class="products__item_text">From photo editing and 
+                            compositing to digital painting, animation, and graphic 
+                            design — you can do it all in Photoshop.</div>
+                        <a class="products__item_link" href="https://www.adobe.com/uk/products/photoshop.html?mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB:G:s&s_kwcid=AL!3085!3!340669891887!e!!g!!adobe%20photoshop!1422700211!58647953511&gclid=Cj0KCQiAj9iBBhCJARIsAE9qRtCkWeMfdXyzHIztGIDMVX6TIiEr2NrIdXXgPzzq08TuMI01iYFdjucaAidqEALw_wcB">Read Full Version</a>
+                        <div class="products__reviews">
+                            <div class="products__reviews_title">Reviews</div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Wow!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">Norm!</div>
+                            </div>
+                            <div class="products__reviews_item">
+                                <img src="img/avatar.png" alt="Profile">
+                                <div class="products__reviews_text">SUPER!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item_footer">
+                    <div class="products__item_tags">
+                        <div class="tag_1">#Adobe</div>
+                        <div class="tag_2">#Art</div>
+                        <div class="tag_3">#Shrek</div>
+                        <div class="tag_4">#App</div>
+                        <div class="tag_5">#Program</div>
+                        <div class="tag_6">#SALE</div>
+                    </div>
+                    <div class="products__item_published">10.11.1991</div>
+                </div>
+            </div>
+           </div>
+           <div class="products__btnAdd">
+               <img src="img/plus.png" alt="" class="products__btnAdd_img">
+           </div> -->
+           </div>
+        </div>
+       <div class="products__bg_wrapper">
+        <img src="img/bg 1.png" alt="" class="products__bg1">
+        <img src="img/bg 2.png" alt="" class="products__bg2">
+       </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="#" class="footer__logo">PROFIT!</a>
+                <div class="footer__info">
+                    <div class="footer__info_name">Created by <span>Brokhin Pavel</span></div>
+                    <div class="footer__info_group">2 course 8 group</div>
+                    <a href="#" class="footer__info_email">Paveline@tut.by</a>
+                    <div class="footer__info_date">18.02.2021</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
