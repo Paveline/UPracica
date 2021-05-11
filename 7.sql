@@ -1,0 +1,1 @@
+select * from profitshop.products where length(descr) > 20;
