@@ -20,7 +20,11 @@ public class AdServlet extends HttpServlet {
         String id = req.getParameter("id");
         resp.setContentType("application/json");
         Ad ad = adCollection.get(id);
-        resp.getWriter().print((new Gson()).toJson(ad));
+        if (ad != null) {
+            resp.getWriter().print((new Gson()).toJson(ad));
+        } else {
+            resp.sendError(HttpServletResponse.SC_NOT_FOUND);
+        }
     }
 
     @Override
@@ -37,7 +41,7 @@ public class AdServlet extends HttpServlet {
         String[] urlAddress = req.getRequestURI().split("/");
         if (urlAddress[2].equals("search")) {
             List<Ad> adList = adCollection.getAllAds();
-            for(Ad ad:adList){
+            for (Ad ad : adList) {
                 resp.getWriter().print((new Gson()).toJson(ad));
             }
         }

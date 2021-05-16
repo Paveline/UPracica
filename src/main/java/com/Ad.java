@@ -47,20 +47,28 @@ public class Ad implements Serializable {
         this.reviews = another.reviews;
     }
 
+    public static boolean validate(Ad item) {
+        return (item.getId() instanceof String &&
+                item.getDescription() instanceof String &&
+                item.getCreatedAt() instanceof Date &&
+                item.getLink() instanceof String &&
+                item.getVendor() instanceof String &&
+                item.getVendor().length() != 0 &&
+                item.getHashTags() instanceof String[] &&
+                item.getHashTags().length != 0 &&
+                item.getDiscount() instanceof String &&
+                item.getValidUntil() instanceof Date
+        );
+    }
+
     public void print() {
-        System.out.println(this.id + " - " + this.description + " - " + this.createdAt + " - " + this.link + " - " +
-                this.vendor + " - " + this.photoLink + " - " + this.hashTags + " - " + this.discount + " - " +
-                this.validUntil + " - " + this.rating + " - " + this.reviews);
+        System.out.println(toString());
     }
 
     public String toString() {
         return this.id + " - " + this.description + " - " + this.createdAt + " - " + this.link + " - " +
                 this.vendor + " - " + this.photoLink + " - " + this.hashTags + " - " + this.discount + " - " +
                 this.validUntil + " - " + this.rating + " - " + this.reviews;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public void setDescription(String description) {
